@@ -1,0 +1,36 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  height: 100vh;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      width: 350px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 24px;
+    }
+  }
+}
+
+.dashboard-menu {
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .card:hover{
+    transform: scale(1.02);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth .container .card {
+    width: 400px;
+  }
+}
